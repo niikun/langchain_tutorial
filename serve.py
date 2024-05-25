@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import os
-from typing import List
+# from typing import List
 
 from fastapi import FastAPI
 from langchain_core.prompts import ChatPromptTemplate
