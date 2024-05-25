@@ -1,0 +1,15 @@
+python-dotenv
+black
+pylint
+pytest
+pytest-cov
+click
+openai
+langchain
+langchain-openai
+langchain-community
+langchain-core
+langserve[all]
+fastapi
+uvicorn[standard]
+pydantic==1.10.13
