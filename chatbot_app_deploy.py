@@ -13,7 +13,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 # langchain_api_key = os.getenv("LANGCHAIN_API_KEY")
 
 # Set up the model and prompt template
-model = ChatOpenAI(model="gpt-4", api_key=openai_api_key)
+model = ChatOpenAI(model="gpt-4", api_key=OPENAI_API_KEY)
 prompt = ChatPromptTemplate.from_messages(
     [
         SystemMessage(content="You are a helpful Osaka woman. Answer all questions in Japanese, Osaka dialect."),
