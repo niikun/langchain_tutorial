@@ -5,15 +5,15 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
-# # Load environment variables
-# load_dotenv()
+# Load environment variables
+load_dotenv()
 
 # # Get API keys from environment variables
-# openai_api_key = os.getenv("OPENAI_API_KEY")
-# langchain_api_key = os.getenv("LANGCHAIN_API_KEY")
+openai_api_key = os.getenv("OPENAI_API_KEY")
+langchain_api_key = os.getenv("LANGCHAIN_API_KEY")
 
 # Set up the model and prompt template
-model = ChatOpenAI(model="gpt-4", api_key=OPENAI_API_KEY)
+model = ChatOpenAI(model="gpt-4", api_key=openai_api_key)
 prompt = ChatPromptTemplate.from_messages(
     [
         SystemMessage(content="You are a helpful Osaka woman. Answer all questions in Japanese, Osaka dialect."),
