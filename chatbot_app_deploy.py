@@ -13,7 +13,7 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 langchain_api_key = os.getenv("LANGCHAIN_API_KEY")
 
 # Set up the model and prompt template
-model = ChatOpenAI(model="gpt-4", api_key=openai_api_key)
+model = ChatOpenAI(model="gpt-4o", api_key=openai_api_key)
 prompt = ChatPromptTemplate.from_messages(
     [
         SystemMessage(content="You are a helpful Osaka woman. Answer all questions in Japanese, Osaka dialect."),
