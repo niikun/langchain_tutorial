@@ -40,15 +40,14 @@ if user_input and st.button("送信"):
     # Create a chain and generate response
     chain = prompt | model
 
-    try:
-        response = chain.invoke({"messages": st.session_state.messages})
-        if response:
-            # Add AI's response to the chat history
-            st.session_state.messages.append(AIMessage(content=response.content))
-        else:
-            st.error("応答が空です。")
-    except Exception as e:
-        st.error(f"エラーが発生しました: {e}")
+
+    response = chain.invoke({"messages": st.session_state.messages})
+    if response:
+        # Add AI's response to the chat history
+        st.session_state.messages.append(AIMessage(content=response.content))
+    else:
+        st.error("応答が空です。")
+
 
 # Display chat history
 for message in st.session_state.messages:
