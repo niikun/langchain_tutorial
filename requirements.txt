@@ -11,9 +11,6 @@ langchain-chroma
 langchain-community
 langchain-core
 langserve[all]
-langgraph 
-langchain-anthropic 
-tavily-python
 fastapi
 uvicorn[standard]
 pydantic==1.10.13
